@@ -38,9 +38,12 @@ const Home = () => {
         <ConsultantBtn />
 
       </div>
-      {/* Right Side  */}
+
       <div>
+        {/* Right Side  */}
       </div>
+
+
       <div className='flex flex-wrap w-full gap-4 items-baseline justify-center mb-8 mt-20'>
         <div className='flex flex-col gap-4 justify-center items-center max-w-4xl px-2 mb-8 lg:px-4'>
           <FirstBtnPage text1={``} text2={`Our Services`} />
@@ -52,6 +55,7 @@ const Home = () => {
         </div>
         <Courses />
       </div>
+
       <div className='flex flex-col gap-4 justify-center items-center mt-20 px-2 mb-8 lg:px-4'>
         <FirstBtnPage text1={``} text2={`About Junky Tech`} />
         <h1 className='text-5xl text-black font-bold text-center '>Building the Future with</h1>
@@ -69,8 +73,8 @@ const Home = () => {
             <p className='text-gray-400 text-base leading-7 mt-2'> Our team of expert developers, designers, and strategists brings together decades of combined experience in delivering solutions that not only meet today's needs but anticipate tomorrow's challenges.
             </p>
             <p className='text-gray-400 text-base leading-7 mt-2'> From startups to enterprises, we've partnered with organizations across the globe to build scalable, secure, and sustainable technology solutions that drive real business outcomes.</p>
-          
-              <ConsultantBtn />
+
+            <ConsultantBtn />
           </div>
         </div>
       </div>
@@ -78,34 +82,47 @@ const Home = () => {
       <div className='flex flex-col gap-4 justify-center items-center mt-10 px-2 mb-8 lg:px-4'>
         <h1 className='text-3xl text-black font-bold text-center'>Our Core Values</h1>
         <p className='text-gray-500 text-center'>The principles that guide our work and define our commitment to excellence.</p>
-        <Values/>
+        <Values />
 
-       <div className='flex gap-4 mb-7 mt-15 justify-between rounded-xl w-full items-center px-14 py-6 border-2 border-gray-50'>
-         <Metrics 
-        icon={<Users2Icon className='text-blue-500 w-8 h-8'/>}
-         title={"50+"}
-         desc={'Expert Developer'}
-         />
-        <Metrics 
-        icon={<Globe className='text-blue-500 w-8 h-8'/>}
-         title={"15+"}
-         desc={'Countries Served'}
-         />
-        <Metrics 
-        icon={<Award className='text-blue-500 w-8 h-8'/>}
-         title={"150+"}
-         desc={'Projects Completed'}
-         />
-        <Metrics 
-        icon={<Clock className='text-blue-500 w-8 h-8'/>}
-         title={"50+"}
-         desc={'Years Experience'}
-         />
-       </div>
+        <div className='flex gap-4 mb-7 mt-15 justify-between rounded-xl w-full items-center px-14 py-6 border-2 border-gray-50'>
+          <Metrics
+            icon={<Users2Icon className='text-blue-500 w-8 h-8' />}
+            title={"50+"}
+            desc={'Expert Developer'}
+          />
+          <Metrics
+            icon={<Globe className='text-blue-500 w-8 h-8' />}
+            title={"15+"}
+            desc={'Countries Served'}
+          />
+          <Metrics
+            icon={<Award className='text-blue-500 w-8 h-8' />}
+            title={"150+"}
+            desc={'Projects Completed'}
+          />
+          <Metrics
+            icon={<Clock className='text-blue-500 w-8 h-8' />}
+            title={"50+"}
+            desc={'Years Experience'}
+          />
+        </div>
+      </div>
+
+      <div className='flex flex-col gap-4 justify-center items-center mt-10 px-2 mb-8 lg:px-4'>
+        <div className='flex flex-col gap-4 justify-center items-center max-w-4xl px-2 mb-8 lg:px-4'>
+          <FirstBtnPage text1={``} text2={`Client Success Stories`}
+          />
+          <h1 className='text-5xl font-bold text-left'>Trusted by Industry Leaders</h1>
+          <p className='text-5xl font-bold text-blue-500 text-center'>Worldwide</p>
+
+          <p className='text-gray-500 text-center max-w-2xl'>Don't just take our word for it. Here's what our clients say about working with Junky Tech and the results we've achieved together.</p>
+        </div>
       </div>
 
 
+
     </div>
+
   )
 }
 
