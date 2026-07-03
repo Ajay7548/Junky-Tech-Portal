@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* its also give scroolbar whitish color  */
+:root {
+  color-scheme: light;
+}
+
