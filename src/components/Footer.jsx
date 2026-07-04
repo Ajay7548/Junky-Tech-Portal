@@ -6,6 +6,13 @@ import FooterContent from './FooterContent'
 
 
 const Footer = () => {
+
+   const scrollTop = () =>{
+    console.log('clicked');
+    
+    window.scrollTo({top:0,behavior:'smooth'})
+  }
+
   return (
     <div className='bg-gray-100 min-h-screen '>
         <div className='flex flex-col pt-20 gap-4'>
@@ -78,7 +85,7 @@ const Footer = () => {
                 <Instagram className='w-4 h-4 text-gray-400 hover:text-blue-500' />
               </div>
             </div>
-            <button className='hover:text-blue-500 w-fit flex items-center gap-2 hover:bg-blue-50 rounded-full px-4 py-2 transition-colors duration-300 cursor-pointer'>
+            <button onClick={scrollTop} className='hover:text-blue-500 w-fit flex items-center gap-2 hover:bg-blue-50 rounded-full px-4 py-2 transition-colors duration-300 cursor-pointer'>
               <MoveUp className='w-6 h-4' />
               <p className='text-md hover:text-blue-400 font-semibold text-gray-400' >Back to Top</p>
             </button>

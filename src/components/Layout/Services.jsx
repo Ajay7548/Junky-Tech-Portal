@@ -4,8 +4,13 @@ import FirstBtnPage from '../FirstBtnPage'
 import ServiceComponent from '../ServiceComponent'
 import { BookHeadphonesIcon, Brain, ChartArea, ChartCandlestickIcon, Cloud, CodeIcon, MessageCircleMoreIcon, Palette, Phone, Shield } from 'lucide-react'
 import Courses from '../Courses'
+import HeadingComponent from '../HeadingComponent'
+import Metrics from '../Metrics'
 
 const Services = () => {
+
+  // const devleopment = Courses.filter((service)=>(service.section ==='development'))
+
   return (
     <div className='flex bg-gray-50 flex-col min-h-screen  justify-baseline items-center  py-16  gap-2  px:2 lg:px-4 '>
       <div className='flex flex-col gap-4 justify-center items-center max-w-4xl px-2 mb-8 lg:px-4'>
@@ -17,7 +22,23 @@ const Services = () => {
         <ConsultantBtn />
       </div>
 
-        <Courses/>
+      <div>
+        <HeadingComponent title={"Development Services"} desc={"Full-stack development solutions for modern businesses"} />
+        <Courses category={'development'} />
+      </div>
+      <div className='flex  flex-col justify-center items-center'>
+        <HeadingComponent title={"Quality & Intelligence"} desc={"Ensuring reliability and smart solutions"} />
+        <Courses category={'quality'} />
+      </div>
+      <div className=''>
+        <HeadingComponent title={"Infrastructure & Support"} desc={"Reliable hosting and ongoing maintenance"} />
+        <Courses category={'business'} />
+      </div>
+      <div className='bg-gray-100 w-full'>
+        <HeadingComponent title={"Our Development Process"} desc={"A  proven methodology that ensures project success from concept to deployment"} />
+        
+      </div>
+
     </div>
   )
 }

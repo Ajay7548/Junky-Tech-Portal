@@ -1,12 +1,29 @@
 import { Menu, SunIcon } from 'lucide-react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
+
+  const [scrolled , setScrolled ] = useState(false)
+
+  useEffect(()=>{
+    const handleScroll = ()=>{
+      setScrolled(window.scrollY < 20)
+    }
+
+    window.addEventListener("scroll",handleScroll)
+
+    return ()=> window.removeEventListener('scroll',handleScroll)
+  },[])
+
+ 
   return (
     <div>
 
-      <nav className="fixed top-0 left-0 right-0 z-50 lg:px-8 lg:py-2 p-2 flex  items-center justify-between bg-white shadow-sm">
+      <nav className=
+      {`fixed top-0 left-0 right-0 z-50 lg:px-8 lg:py-2 p-2 ${scrolled ? "":"shadow-lg  shadow-blue-200"}
+       flex  items-center justify-between bg-white`}
+      >
         <Link to='/' className='text-xl lg:text-2xl text-blue-500 font-bold '>
           Junky Tech
         </Link>
