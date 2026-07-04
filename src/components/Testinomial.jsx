@@ -5,8 +5,8 @@ const Testinomial = ({desc,name,role}) => {
     return (
         <div className=' '>
             <div className='flex rounded-2xl flex-col gap-4 p-6  hover:-translate-y-1
-                hover:shadow-blue-200
-                hover:shadow-xl justify-baseline items-baseline border-2 border-gray-50'>
+                hover:shadow-blue-200 dark:hover:shadow-blue-900
+                hover:shadow-xl justify-baseline items-baseline border-2 dark:border-gray-950 border-gray-50'>
                 <div className='flex gap-3'>
                     <Quote className='text-blue-500 h-5 w-5' />
                 <Star
@@ -28,7 +28,7 @@ const Testinomial = ({desc,name,role}) => {
                 </div>
                 <p className='text-gray-400 text-base '>{desc}</p>
                 <div className='flex flex-col items-center'>
-                    <p className='text-gray-900 text-center font-medium'>{name}</p>
+                    <p className='text-gray-900 dark:text-white text-center font-medium'>{name}</p>
                     <p className='text-gray-400 text-center text-sm'>{role}</p>
                 </div>
             </div>

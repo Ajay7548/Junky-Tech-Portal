@@ -14,7 +14,7 @@ const Footer = () => {
   }
 
   return (
-    <div className='bg-gray-100 min-h-screen '>
+    <div className='bg-gray-100 dark:bg-gray-900 min-h-screen '>
         <div className='flex flex-col pt-20 gap-4'>
           <div className='flex  flex-col lg:flex-row justify-between items-baseline gap-6 px-8 py-4 '>
             <div className='flex max-w-md pb-16 flex-col gap-4  '>
@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
             </div>
             <div className='flex flex-col px-6 gap-4'>
-              <h2 className='text-gray-900 text-md  font-semibold'>Service</h2>
+              <h2 className='text-gray-900 text-md dark:text-white  font-semibold'>Service</h2>
               <div className='flex flex-col gap-2'>
                 <FooterContent text='Web Developement'/>
                 <FooterContent text='E-Commerce'/>
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
               </div>
             <div className='flex  flex-col px-6 gap-4'>
-              <h2 className='text-gray-900 text-md  font-semibold'>Company</h2>
+              <h2 className='text-gray-900 text-md dark:text-white  font-semibold'>Company</h2>
               <div className='flex flex-col gap-2'>
                 <FooterContent text='About'/>
                 <FooterContent text='Our Teams'/>
@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
               </div>
             <div className='flex  flex-col px-6 gap-4 lg:pr-16'>
-              <h2 className='text-gray-900 text-md  font-semibold'>Service</h2>
+              <h2 className='text-gray-900 text-md  dark:text-white font-semibold'>Service</h2>
               <div className='flex flex-col gap-2'>
                 <FooterContent text='Contact Us'/>
                 <FooterContent text='Help Center'/>
@@ -71,7 +71,7 @@ const Footer = () => {
             
           </div>
 
-          <div className='flex p-4 border-t-2  border-gray-200 justify-between items-center'>
+          <div className='flex p-4 border-t-2 dark:border-gray-950 border-gray-200 justify-between items-center'>
             <p className='text-center font-semibold text-sm text-gray-400'>© 2026 Your Company. All rights reserved.</p>
 
             <div className='flex  items-center gap-3 pr-10 '>

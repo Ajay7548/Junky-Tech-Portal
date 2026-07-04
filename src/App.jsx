@@ -8,6 +8,7 @@ import Career from './components/Layout/Career'
 import Layout from './Layout'
 
 const App = () => {
+
   return (
 
     <div className='bg-gray-100 text-gray-900 min-h-screen  '>
