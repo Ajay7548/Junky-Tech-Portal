@@ -8,9 +8,8 @@ const AboutValues = ({ icon, title, desc }) => {
                 <span  className='text-blue-600' >{icon}</span>
             </div>
             <div>
-                <h3 className='text-xl font-bold text-gray-900 mb-3'>Innovation</h3>
-                <p className='text-gray-800'>
-                    We stay ahead of technology trends to deliver cutting-edge solutions that give you a competitive advantage.
+                <h3 className='text-xl font-bold text-gray-900 mb-3'>{title}</h3>
+                <p className='text-gray-800'>{desc}
                 </p>
             </div>
         </div>
