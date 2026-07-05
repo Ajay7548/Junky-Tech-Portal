@@ -9,9 +9,9 @@ const Layout = () => {
       <Navbar />
 
       {/* Adjust pt-20 if your navbar height changes */}
-      <main className="flex-1 pt-12 dark:bg-gray-900 ">
+      <main className="flex-1 pt-20 dark:bg-gray-900 ">
         <Outlet />
-      </main>
+      </main>w
 
       <Footer />
     </div>

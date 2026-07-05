@@ -24,13 +24,13 @@ const Navbar = () => {
     <div>
 
       <nav className=
-      {`fixed top-0 left-0 right-0 z-50 lg:px-8 lg:py-2 p-2 ${scrolled ? "" 
+      {`fixed top-0 left-0 right-0 z-50 lg:px-8  w-screen lg:py-2 p-2 ${scrolled ? "" 
     : "shadow-[0_10px_20px_-5px_rgba(59,130,246,0.3),0_6px_10px_-6px_rgba(147,51,234,0.2)]  dark:shadow-[0_10px_20px_-5px_rgba(37,99,235,0.4),0_6px_10px_-6px_rgba(126,34,206,0.3)]"
         
         }
        flex  items-center justify-between dark:bg-gray-900 bg-white`}
       >
-        <Link to='/' className='text-xl lg:text-2xl text-blue-500 font-bold '>
+        <Link to='/' className='text-2xl px-3 lg:px-0 text-blue-500 font-bold '>
           Junky Tech
         </Link>
         

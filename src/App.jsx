@@ -11,7 +11,7 @@ const App = () => {
 
   return (
 
-    <div className='bg-gray-100 text-gray-900 min-h-screen  '>
+<div className='bg-gray-100 flex flex-col text-gray-900 overflow-auto w-screen min-h-screen'>
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
